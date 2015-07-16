@@ -34,12 +34,12 @@ func main() {
         ciphers := list(target, bar)
         bar.End()
         bar.Erase()
-        fmt.Printf("%s:\n", target)
+        fmt.Printf("- %s\n", target)
         for _, cipher := range ciphers {
-            fmt.Printf("  %s\n", cipher)
+            fmt.Printf("  - %s\n", cipher)
         }
         if len(ciphers) == 0 {
-            fmt.Println("No ciphers matched.")
+            fmt.Println("  - No ciphers matched.\n")
         }
     }
 }
